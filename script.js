@@ -13,7 +13,7 @@ const rightTiles = document.querySelectorAll('.tile-right');
 const leftTiles = document.querySelectorAll('.tile-left');
 
 hamburgerButton.addEventListener('click', function () {
-    mobileMenu.classList.toggle('show'); // Dodaj lub usuń klasę "show" w celu pokazania/ukrycia menu
+    mobileMenu.classList.toggle('show');
 });
 window.addEventListener('load', function(){
     const resizeEvent = new Event('resize');
