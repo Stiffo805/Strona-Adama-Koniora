@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(215, 225, 16);
+}
+
+.form1{
+    margin-top: 50px;
+    width: 50%;
+    background-image: linear-gradient(to right, rgb(81, 175, 69), rgb(93, 178, 181));
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;  
+    padding-bottom: 15px;
+}
+.form1 h2{
+    font-style: italic;
+}
+#container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.form1-desc{
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.subject-label{
+    font-size: 24px;
+    
+    margin-left: 15px;
+}
+.choose-subject{
+    margin-right: 15px;
+    
+}
+#form-container{
+    margin-top: 25px;
+    text-align: center;
+}
+.align-left{
+    text-align:left;
+    width: 50%;
+    margin: 0 auto;
+}
+.options-desc{
+    font-size: 20px;
+    color: rgb(94, 105, 143);
+}
+.asterisk{
+    color: rgb(199, 8, 8);
+}
+#name-input{
+    margin-top: 10px;
+}
+#email-input{
+    margin-top: 10px;
+}
+#tel-input{
+    margin-top: 10px;
+}
+#submit-button{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-input-text{
+    border: 3px solid rgb(39, 135, 159);
+    font-size: 20px;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+select{
+    border: 2px solid rgb(41, 160, 179);
+    font-size: 16px;
+}
+
+.form-error{
+    color: rgb(194, 12, 12);
+    font-size: 18px;
+    display: none;
+}
+
+#first-form-section{
+    margin-bottom: 25px;
+}
+
+.extra-margin-bottom{
+    margin-bottom: 15px;
+}
+
+.extra-margin-top{
+    margin-top: 10px;
+}
+
+.form-submitted-info{
+    font-size: 18px;
+    color:rgb(30, 255, 0);
+    display: none;
+}
+
+@media (max-width: 1000px){
+    .form1{
+        width: 90%;
+    }
+}
+@media (max-width: 480px){
+    .subject-label{
+        font-size: 18px;
+        margin-left: 5px;
+    }
+}

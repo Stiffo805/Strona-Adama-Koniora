@@ -1,0 +1,241 @@
+.main-section{
+    width: 100%;
+    clear:both;
+}
+body{
+    margin:0;
+}
+*{
+    box-sizing:border-box;
+}
+
+
+.main-page-header{
+    background-image: linear-gradient(to right, rgb(116, 192, 29), rgb(53, 168, 170));
+    opacity: 0.85;
+}
+.header-text{
+    color: #4a2586;
+    font-size: 24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.browse{
+    margin-left: 150px;
+    font-size: 20px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.browse-list{
+    margin-left: 150px;
+    padding-bottom: 15px;
+    display: inline;
+    
+}
+.browse-list li{
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold;
+    border: 3px solid rgb(31, 166, 159);
+    background-color: rgb(43, 56, 154);
+    opacity: 0.8;
+    color: rgb(213, 145, 209);
+    cursor: pointer;
+    font-size: 16px;
+}
+.browse-list li:hover{
+    padding-top: 15px;
+    font-size: 22px;
+}
+
+.main-footer{
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(32, 19, 19);
+    text-align:center;
+    padding-top: 20px;  
+}
+.footer-span{
+    color: rgba(187, 184, 184, 0.802);
+}
+.form1-link{
+    font-style: italic;
+    text-decoration: wavy;
+    font-size: 20px;
+}
+.tile-left{
+    width: 50%;
+    height: 600px;
+    background-size: cover;
+    float:left;
+}
+#image-1{
+    background-image: url("img/studyingImg.jpg");
+}
+
+.tile-right{
+    width: 50%;
+    height: 600px;
+    background-size:cover;
+    float:left;
+}
+#article-1{
+    padding-left: 15px;
+    padding-right: 5px;
+    background-image: linear-gradient(to left, rgb(91, 139, 67),rgb(33, 173, 33));
+}
+.article-ul li{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#image-2{
+    background-image: url("img/Angielski-main-img.jpg")
+}
+#article-2{
+    padding-left: 15px;
+    padding-right: 5px;
+    background-image: linear-gradient(to right  , rgb(91, 139, 67),rgb(33, 173, 33));
+}
+
+.logo-alt-sub{
+    font-size: 14px;
+    padding-left: 10px;
+    color: rgb(10, 26, 129);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#image-3{
+    background-image: url("img/holidayImg.jpg");
+}
+#article-3{
+    padding-left: 15px;
+    padding-right: 5px;
+    background-image: linear-gradient(to left, rgb(91, 139, 67),rgb(33, 173, 33));
+}
+
+
+
+.mobile-menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    background-image: linear-gradient(to right, rgb(104, 174, 51), rgb(31, 165, 114));
+    text-align:center;
+    margin: 0;
+}
+
+.mobile-menu.show {
+    display: block;
+}
+
+.mobile-menu li {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.mobile-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.hamburger-button{
+    display: none;
+    cursor: pointer;
+
+}
+
+@media (max-width: 1200px){
+    
+    .hamburger-button {
+        display: block;
+        width: 50px;
+        height: 50px;
+        float:right;
+        margin-top: 50px;
+        margin-right: 5px;
+    }
+
+    .browse{
+        margin-left: 50px;
+    }
+
+    .browse-list {
+        display: none; /* Ukryj oryginalne menu */
+    }
+
+    /* Pokaż mobilne menu */
+    
+}
+
+@media (max-width: 1200px){
+    .article-ul li{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1068px){
+    .article-ul li{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 900px){
+    .article-ul li{
+        font-size: 20px;
+    }
+    .tile-left, .tile-right{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 560px){
+    .header-text{
+        font-size: 14px;
+
+    }
+    .article-ul li{
+        font-size: 16px;
+    }
+    .logo-alt-sub{
+        font-size: 8px;
+    }
+
+    .hamburger-button{
+        margin-top: 25px;
+    }
+    .main-footer{
+        padding-bottom: 15px;
+    }
+    .browse{
+        font-size: 14px;
+    }
+    #article-1{
+        padding-left: 8px;
+    }
+    #article-2{
+        padding-left: 8px;
+    }
+    #article-3{
+        padding-left: 8px;
+    }
+}
+
+@media (max-width: 450px){
+    .article-ul li{
+        font-size: 12px;
+    }
+}

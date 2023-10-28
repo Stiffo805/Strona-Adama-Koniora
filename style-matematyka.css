@@ -1,0 +1,275 @@
+body{
+    background-image: url("img/Matematyka-1.jpg");
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+}
+#container{
+    width: 100%;
+    max-width: 100vw;
+    display: inline-block;
+    margin: 0;
+    height: 100%;
+    background-color: rgba(255,255,255,0.8);
+}
+
+#container2{
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    height: 100%;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.subject-page-header{
+    margin: auto;
+
+}
+
+.logo-alt{
+    color: #4a2586;
+    font-size: 24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    padding-left: 10px;
+    width: 25%;
+    margin-top: 25px;  
+    
+}
+
+.logo-alt-sub{
+    font-size: 14px;
+    padding-left: 10px;
+    color: rgb(10, 26, 129);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.subject-page-title{
+    display: inline-block;
+    width: 25%;
+    text-align:center;
+    color: rgb(31, 198, 67);
+    font-size: 40px;
+}
+
+.tile-left{
+    padding-left: 15px;
+    
+    float: left;
+    box-sizing: border-box;
+    width: 40%;
+}
+
+.tile-right{
+    margin-left: 5px;
+    
+    float: right;
+    box-sizing: border-box;
+    width: 40%;
+}
+
+.section-header{
+    font-size: 50px;
+}
+
+#pencil-img{
+    width: 100%;
+}
+
+.level-header{
+    font-size: 32px;
+    text-align: center;
+}
+
+.task-content{
+    font-size: 20px;
+}
+
+.task-solution{
+    font-size: 18px;
+}
+
+.gallery-points > ul > li{
+    display: block;
+    border: 1px solid rgb(46, 114, 65);
+    color: rgb(90, 20, 20);
+    float:left; 
+    margin-left: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.gallery-points > ul > li:hover{
+    background-color: rgba(63, 153, 55,0.6);
+    padding: 3px;
+}
+
+.viewed-task{
+    
+    padding: 3px;
+}
+
+.browse-list{
+    margin-left: 150px;
+    padding-bottom: 15px;
+    display: inline;
+    
+}
+.browse-list li{
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold;
+    border: 3px solid rgb(31, 166, 159);
+    background-color: rgb(43, 56, 154);
+    opacity: 0.8;
+    color: rgb(213, 145, 209);
+    cursor: pointer;
+}
+.browse-list li:hover{
+    padding-top: 15px;
+    font-size: 22px;
+}
+
+.title-container{
+    text-align:center;
+    width: 100%;
+}
+
+.vertical-gallery{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.image-container h1{
+    font-size: 48px;
+    z-index: 2;
+}
+
+.opis-galeria{
+    font-size: 24px;
+}
+
+.galeria-lista{
+    font-size: 20px;
+    list-style-type: none;
+}
+.galeria-lista li{
+    padding: 10px;
+}
+.image-container{
+    width: 100%;
+    min-height: 800px;
+    background-size: cover;
+    position: relative;
+    padding: 15px;
+}
+.image-container::before{
+    content: ""; /* Pusty content jest wymagany w celu wygenerowania pseudo-elementu */
+    opacity: 0.5; /* Dostosuj poziom przezroczystości wg potrzeb */
+    width: 100%; /* Rozciągnij pseudo-element, aby pokrywał tło rodzica */
+    height: 100%;
+    position: absolute; /* Pozycja absolutna, aby pokryć tło rodzica */
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+#competition-img::before{
+    background-image: url("img/matematyka-galeria-1.jpg");
+}
+
+.mobile-menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    background-image: linear-gradient(to right, rgb(104, 174, 51), rgb(31, 165, 114));
+    text-align:center;
+    margin: 0;
+}
+
+.mobile-menu.show {
+    display: block;
+}
+
+.mobile-menu li {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.mobile-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.hamburger-button{
+    display: none;
+    cursor: pointer;
+
+}
+
+@media (max-width: 1200px){
+    .tile-left, .tile-right{
+        width: 100%;
+    }
+    .hamburger-button {
+        display: block;
+        width: 50px;
+        height: 50px;
+        float:right;
+        margin-top: 50px;
+        margin-right: 5px;
+    }
+
+    .browse{
+        margin-left: 50px;
+    }
+
+    .browse-list {
+        display: none; /* Ukryj oryginalne menu */
+    }
+    .logo-alt{
+        width: 35%;
+    }
+    /* Pokaż mobilne menu */
+    
+}
+
+@media (max-width: 480px){
+    .header-text{
+        font-size: 14px;
+
+    }
+    .logo-alt{
+        font-size: 12px;
+    }
+    .logo-alt-sub{
+        font-size: 8px;
+    }
+
+    .hamburger-button{
+        margin-top: 25px;
+        width: 25px;
+        height: 25px;
+    }
+    .main-footer{
+        padding-bottom: 15px;
+    }
+    .browse{
+        font-size: 14px;
+    }
+    .subject-page-title{
+        font-size: 12px;
+    }
+
+    
+    
+}
+

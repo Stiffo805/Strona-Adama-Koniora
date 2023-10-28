@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Adama Koniora</title>
+    <link rel="stylesheet" href="style-formularz.css" />
+</head>
+<body>
+    <header><a href="index.html">Powrót do strony głównej</a></header>
+    <div id="container">
+        <div class="form1"> 
+            <h2>Zapis na korepetycje!</h2>
+            <span class="form1-desc">Wypełnij formularz, a wkrótce dostaniesz odpowiedź(proponowane terminy korepetycji oraz dalsze szczegóły).
+                Aby poprosić o zapis na obydwa przedmioty, wypełnij formularz dwa razy.
+                Formularze sprawdzam ręcznie.
+            </span>
+            <br>
+            <div id="form-container">
+                <form id="the-form">
+                <div class="align-left">
+                    <span class="options-desc">Wybierz przedmiot:</span>
+                </div>
+                <br>
+                <div id="first-form-section">
+                    <label for="math" class="subject-label">Matematyka</label>
+                    <input type="checkbox" class="choose-subject" name="math" id="math"/>
+                    <label for="astro" class="subject-label">J. angielski</label>
+                    <input type="checkbox" class="choose-subject" name="astro" id="astro"/>
+                </div>
+                <p class="form-error" id="incorrect-subject">* Wybierz przedmiot *</p>
+                
+                <div class="align-left">
+                    <span class="options-desc">Poziom nauczania: </span>
+                    <select id="school-level" name="options">
+                        <option value="primary-school">Szkoła podstawowa</option>
+                        <option value="secondary-school">Szkoła średnia</option>
+                    </select>
+                </div>
+                <br>
+                <div class="align-left">
+                    <span class="options-desc">Klasa: </span>
+                    <select id="class-level">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div class="align-center extra-margin-bottom">
+                    <p class="form-error" id="incorrect-class">* Wybierz odpowiednią klasę lub typ szkoły *</p>
+                </div>
+                
+                <div class="align-left">
+                    <span class="options-desc">Imię i nazwisko wypełniającego(opcjonalne): </span>
+                    <input class="form-input-text" type="text" id="name-input" name="yourName" />
+                </div>
+                <br>
+                <div class="align-left">
+                    <span class="options-desc">E-mail do kontaktu: </span><br>
+                    <input class="form-input-text" type="email" id="email-input" name="yourEmail"/>
+                </div>
+                <p class="form-error align-left extra-margin-top" id="incorrect-email">* Niepoprawny format maila *</p>
+                <br>
+                <div class="align-left">
+                    <span class="options-desc">Numer telefonu(opcjonalne): </span>
+                    <input class="form-input-text" type="tel" id="tel-input" name="yourTel"/>
+                </div>
+                <p class="form-error align-left extra-margin-top" id="incorrect-tel">* Niepoprawny format nr telefonu. Jeśli nie podajesz, zostaw puste *</p>
+                
+                <br>
+                <button type="submit" id="submit-button">Wyślij!</button>
+                <p class="form-submitted-info" id="correct-submit">Wysłano! Nie klikaj ponownie.</p>
+            </form>
+            </div>
+        </div>
+    </div>
+    <script src="script-formularz.js"></script>
+</body>
+</html>
