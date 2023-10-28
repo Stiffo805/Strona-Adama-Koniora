@@ -228,6 +228,12 @@ body{
     
 }
 
+@media (max-width: 560px){
+    .tile{
+        margin-left: 15px;
+    }
+}
+
 @media (max-width: 480px){
     .header-text{
         font-size: 14px;
