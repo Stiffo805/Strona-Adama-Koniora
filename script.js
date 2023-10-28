@@ -29,11 +29,11 @@ window.addEventListener('resize', function(){
             swapDOMElements(div2,imgDiv2);
         }
         rightTiles.forEach(function(tile){
-            tile.style.height = window.innerWidth*(7/24)+"px";
+            tile.style.height = window.innerWidth*(9/24)+"px";
 
         });
         leftTiles.forEach(function(tile){
-            tile.style.height = window.innerWidth*(7/24)+"px";
+            tile.style.height = window.innerWidth*(9/24)+"px";
         });
     }
     else{
