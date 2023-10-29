@@ -69,10 +69,10 @@ function validateTel(tel){
 }
 
 function validateEmail(email) {
-    // Define a regular expression for a valid email address
+    
     const emailRegex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
   
-    // Use the test() method to check if the email matches the regex
+    
     return emailRegex.test(email);
   }
 formObject.addEventListener('submit',function(e){
