@@ -218,12 +218,12 @@ body{
     }
 
     .browse-list {
-        display: none; /* Ukryj oryginalne menu */
+        display: none; 
     }
     .logo-alt{
         width: 35%;
     }
-    /* Pokaż mobilne menu */
+    
     
 }
 
