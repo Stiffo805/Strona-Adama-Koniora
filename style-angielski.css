@@ -85,12 +85,12 @@ body{
     padding: 15px;
 }
 #english-bp-img::before{
-    content: ""; /* Pusty content jest wymagany w celu wygenerowania pseudo-elementu */
-    background-image: url("img/english-bootcamp\ img.jpg"); /* Dziedziczenie tła od rodzica */
-    opacity: 0.5; /* Dostosuj poziom przezroczystości wg potrzeb */
-    width: 100%; /* Rozciągnij pseudo-element, aby pokrywał tło rodzica */
+    content: ""; 
+    background-image: url("img/english-bootcamp\ img.jpg"); 
+    opacity: 0.5; 
+    width: 100%; 
     height: 100%;
-    position: absolute; /* Pozycja absolutna, aby pokryć tło rodzica */
+    position: absolute; 
     top: 0;
     left: 0;
     background-size: cover;
@@ -119,12 +119,11 @@ body{
     padding: 15px;
 }
 .image-container::before{
-    content: ""; /* Pusty content jest wymagany w celu wygenerowania pseudo-elementu */
-     /* Dziedziczenie tła od rodzica */
-    opacity: 0.5; /* Dostosuj poziom przezroczystości wg potrzeb */
-    width: 100%; /* Rozciągnij pseudo-element, aby pokrywał tło rodzica */
+    content: ""; 
+    opacity: 0.5; 
+    width: 100%; 
     height: 100%;
-    position: absolute; /* Pozycja absolutna, aby pokryć tło rodzica */
+    position: absolute;
     top: 0;
     left: 0;
     background-size: cover;
