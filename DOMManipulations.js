@@ -23,5 +23,5 @@ function isElementBefore(element1, element2) {
             }
         }
     }
-    return false; // Elements are not comparable or have the same parent.
+    return false; 
 }
